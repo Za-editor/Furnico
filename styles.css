@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #DBCBBD;
+  color: #dbcbbd;
 }
 
 .logo {
@@ -440,21 +440,21 @@ main {
   background-color: #9a5a2e;
 }
 
-.footer{
+.footer {
   background-color: #4a4a4a;
   color: white;
 }
 
-.newsletter-sect p{
-font-size: 1.25rem;
+.newsletter-sect p {
+  font-size: 1.25rem;
 }
 
-.newsletter-sect{
+.newsletter-sect {
   display: flex;
   flex-direction: row;
 }
 
-.news-det{
+.news-det {
   margin: 0;
   padding: 0;
   top: 0;
@@ -466,7 +466,7 @@ font-size: 1.25rem;
 }
 
 .subscribe input {
-  border: 0, 0, 0, ;
+  border: 0, 0, 0;
 }
 
 .nav-item .nav-link {
@@ -480,4 +480,68 @@ font-size: 1.25rem;
 
 .footer-cont {
   padding-top: 3rem;
+}
+
+/*Smaller Screen (Mobile) */
+@media (max-width: 768px) {
+  .logo {
+    width: auto;
+    height: 50px;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  .homepage {
+    padding-left: 0.15rem;
+    padding-right: 1rem;
+  }
+
+  .side-by-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .one {
+    width: 100%;
+    height: auto;
+  }
+
+  .two {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .img-fluid1 {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+  }
+  .img-fluid2 {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .home-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 2rem;
+  }
+
+  .home-prg {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
 }
