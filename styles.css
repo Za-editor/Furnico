@@ -1,0 +1,762 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Libre Bodoni", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #dbcbbd;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap");
+
+nav {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.navbar-nav li a {
+  color: #4a4a4a;
+  text-decoration: none;
+  position: relative;
+  font-weight: 400;
+}
+.navbar-nav li a:hover {
+  text-decoration: underline;
+  color: #b36b3a;
+}
+.navbar-nav li a.active,
+.navbar-nav li a[aria-current="page"] {
+  color: #b36b3a;
+  font-weight: 400;
+}
+.navbar-nav li a.active span,
+.navbar-nav li a[aria-current="page"] span {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  width: 50px;
+  background-color: #b36b3a;
+  border-radius: 9999px;
+}
+.btn-join {
+  background-color: #b36b3a;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+.btn-join:hover {
+  background-color: #9a5a2e;
+  color: white;
+}
+
+.homepage {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.side-by-side > div {
+  padding: 1rem;
+}
+
+.one {
+  width: 2000px;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 2rem;
+}
+.img-fluid1 {
+  height: 350px;
+  object-fit: cover;
+}
+.img-fluid2 {
+  height: 600px;
+  width: 750px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+
+.home-prg {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+}
+
+.home-btns {
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.btn-out {
+  background-color: transparent;
+  color: #b36b3a;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  transition: background-color 0.3s ease;
+  height: 40px;
+  margin-left: 4rem;
+}
+
+.btn-out:hover {
+  background-color: #9a5a2e;
+  color: white;
+}
+
+.comfort {
+  color: #9a5a2e;
+}
+
+.hero {
+  background-color: #ad6f46;
+  height: 95vh;
+}
+.hero-content {
+  display: flex;
+  gap: 2.5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-top: 50px;
+}
+.hero-img {
+  width: 900px;
+  height: 800px;
+  margin-top: 50px;
+}
+
+.hero-one {
+  width: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-two {
+  width: 2000px;
+}
+
+.heading {
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.hero-prg {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.btn-hero {
+  background-color: transparent;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  height: 50px;
+  width: 300px;
+  margin-top: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.card {
+  width: 30rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+  }
+
+  .card-heading {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  p,
+  a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+  }
+
+  p {
+    inset: auto auto 80px 30px;
+  }
+
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover h2 {
+    inset: auto auto 280px 30px;
+    transition: inset 0.3s ease-out;
+  }
+
+  &:hover p,
+  &:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+
+  &:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+  }
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-top: 5rem;
+}
+
+.card-prg {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.heading2 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.carousel-headers {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+/*Section-header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333;
+  line-height: 1.2;
+}
+/*testimonials */
+.testimonials {
+  padding: 100px 0;
+}
+
+.testimonials-item {
+  background-color: #fde7be;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.testimonials-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-item img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%);
+  line-height: 1.2;
+}
+
+.testimonials-item .job {
+  text-transform: capitalize;
+  color: hsl(0, 0%, 40%);
+}
+
+.testimonials-item p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 40%);
+}
+
+.testimonials-item .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: hsl(36, 88%, 66%);
+}
+
+.ShopNow {
+  background-image: url(images/background.avif);
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.Shop-det {
+  padding-top: 6rem;
+  padding-left: 5rem;
+  padding-left: 5rem;
+}
+.Shop-det h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Shop-det p {
+  font-size: 1.25rem;
+  padding-top: 2rem;
+}
+
+.btn-shop {
+  background-color: #ad6f46;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  height: 50px;
+  width: 300px;
+  margin-top: 3rem;
+}
+
+.btn-shop:hover {
+  background-color: #9a5a2e;
+}
+
+.footer {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.newsletter-sect p {
+  font-size: 1.25rem;
+}
+
+.newsletter-sect {
+  display: flex;
+  flex-direction: row;
+}
+
+.news-det {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.newsletter h5 {
+  font-size: 2rem;
+}
+
+.subscribe input {
+  border: 0, 0, 0;
+}
+
+.nav-item .nav-link {
+  color: #b36b3a;
+}
+.logos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.footer-cont {
+  padding-top: 3rem;
+}
+
+/*Smaller Screen (Mobile) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    position: absolute;
+    overflow-x: clip;
+  }
+
+  .logo {
+    width: auto;
+    height: 50px;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  .homepage {
+    padding-left: 0.15rem;
+    padding-right: 1rem;
+  }
+
+  .side-by-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+  }
+
+  .one {
+    width: 100%;
+    height: auto;
+  }
+
+  .two {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .img-fluid1 {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+  }
+  .img-fluid2 {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .home-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 2rem;
+  }
+
+  .home-prg {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    background-color: #ad6f46;
+    width: 100%;
+  }
+
+  .hero-prg {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .hero-one {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+  }
+  .hero-two {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 70%;
+    margin-top: 2px;
+  }
+
+  .btn-hero {
+    background-color: transparent;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+    height: 50%;
+    width: 50%;
+    margin-top: 0.5rem;
+  }
+
+  .card-prg {
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    color: #333;
+  }
+
+  .heading2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .carousel-headers {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card {
+    width: 8rem;
+    height: 12rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      transition: opacity 0.2s ease-out;
+    }
+
+    .card-heading {
+      inset: auto auto 30px 30px;
+      margin: 0;
+      transition: inset 0.3s 0.3s ease-out;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 0.5rem;
+    }
+
+    p,
+    a {
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+      transition: opacity 0.3s ease-out;
+      font-size: 0.2rem;
+    }
+
+    p {
+      inset: auto auto 50px 30px;
+    }
+
+    a {
+      inset: auto auto 40px 30px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover h2 {
+      inset: auto auto 120px 30px;
+      transition: inset 0.3s ease-out;
+    }
+
+    &:hover p,
+    &:hover a {
+      opacity: 1;
+      transition: opacity 0.5s 0.1s ease-in;
+    }
+
+    &:hover img {
+      transition: opacity 0.3s ease-in;
+      opacity: 1;
+    }
+  }
+
+  .card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .ShopNow {
+    background-image: url(images/background.avif);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  .Shop-det {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-left: 1rem;
+  }
+  .Shop-det h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .Shop-det p {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  .btn-shop {
+    background-color: #ad6f46;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+    height: 50px;
+    width: 200px;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .newsletter {
+    display: flex;
+  }
+
+  .newsletter h5 {
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 100%;
+    display: block;
+  }
+}
