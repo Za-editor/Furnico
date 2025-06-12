@@ -484,6 +484,14 @@ main {
 
 /*Smaller Screen (Mobile) */
 @media (max-width: 768px) {
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  position: absolute;
+}
+
+
   .logo {
     width: auto;
     height: 50px;
@@ -571,8 +579,8 @@ main {
 
   .hero-img {
     width: 100%;
-    height: 90%;
-    margin-top: 10px;
+    height: 70%;
+    margin-top: 2px;
   }
 
   .btn-hero {
@@ -584,8 +592,8 @@ main {
     padding: 0.5rem 1.25rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
-    height: 50px;
-    width: 300px;
+    height: 50%;
+    width: 10%;
     margin-top: 0.5rem;
   }
 
@@ -688,7 +696,7 @@ main {
 
   .ShopNow {
     background-image: url(images/background.avif);
-    height: 350px;
+    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -722,6 +730,20 @@ main {
     transition: background-color 0.3s ease;
     height: 50px;
     width: 200px;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
   }
+
+  .newsletter{
+    display: flex;
+}
+
+.newsletter h5 {
+  font-size: 1rem;
+}
+
+.footer {
+  width: 100%;
+  display: block;
+}
 }
