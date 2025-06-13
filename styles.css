@@ -2098,7 +2098,7 @@ main {
   }
 }
 
-@keyframes appear {
+@-webkit-keyframes appear {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -2110,7 +2110,7 @@ main {
   }
 }
 
-@keyframes clip {
+@-webkit-keyframes clip {
   from {
     opacity: 0;
     clip-path: inset(100% 100% 0 0);
