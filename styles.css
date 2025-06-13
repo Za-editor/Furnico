@@ -766,6 +766,28 @@ main {
     width: 100%;
     display: block;
   }
+  .testimonials {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .hero {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .card-section {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .ShopNow {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
 }
 
 /*big Screen (Tablet) */
@@ -1043,6 +1065,29 @@ main {
   .footer {
     width: 100%;
     display: block;
+  }
+
+  .testimonials {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .hero {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .card-section {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .ShopNow {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -1528,6 +1573,29 @@ main {
   .footer-cont {
     padding-top: 3rem;
   }
+
+  .testimonials {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .hero {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .card-section {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .ShopNow {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
 }
 
 /*Bigger screens */
@@ -2004,6 +2072,29 @@ main {
 
   .footer-cont {
     padding-top: 3rem;
+  }
+
+  .testimonials {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .hero {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .card-section {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .ShopNow {
+    animation: clip linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
 }
 
